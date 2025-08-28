@@ -1,0 +1,175 @@
+---
+title: "Dissertation Proposal"
+format: html
+editor: visual
+---
+
+## Chapter 1 - Historic range reconstruction
+
+### **Intro**
+
+The modern range of the Hawaiian Honeycreepers is severely constricted by anthropogenic forces. Habitat destruction, avian malaria, and invasive species, to name a few, have pushed most honeycreeper populations to flee to higher elevations or face extinction. These antropogenic range shifts confound biogeograpic analyses, making it impossible to truly measure the strength of biogeographic effects on this radiation.
+
+The true "undisturbed" ranges of the HI honeycreepers are well and truly lost to time, but there are many sources of info that could help get us closer to this true range. For one, there is much traditional ecological knowledge of the honeycreepers. These forest birds hold strong cultural ties to the native Hawaiians, as they were hunted a source of food and for their feathers. Though integrating this data may be less straightforward (language barriers, different taxonomic understanding, diminishing cultural practice), this actually opens up windows for inter-disciplinary collaboration. (how do i say this) In addition, western science often neglects these vast sources of information. Working to collate and integrate indigenous knowledge will not only help to bolster range data, but also serve as an example of methods to utilizing indigenous knowledge.
+
+-   fossil evidence + museum specimen data
+
+In order to mitigate this, I will attempt to reconstruct the historic ranges of the HI honeycreepers, combining many different sources of data
+
+### **Methods**
+
+Pull info from museum specimen logs, fossil data, as well as from verbal accounts (capt. cook etc) and nupepaa accounts + possibly combine with modern ebird data
+
+-   take museum specimen data from idigbio,
+
+    -   need to clean + inspect entries with missing info (using other papers) such as...
+
+    -   XY coord data
+
+    -   dates
+
+    -   collectors
+
+-   then do weighted reconstruction (?), with more weight on older accounts? bayesian multi-info integration?
+
+Depending on how good the data turns out, either develop maps or use niche modeling techniques
+
+### **Nupepa analysis**
+
+From just searching the bird names 995 hits
+
+-   Many are repeat entries though, especially the older entries
+
+-   Seems like there may not be much spatial information
+
+Translations start from about the 1980s, previous text is untranslated
+
+-   Can get general idea of translation from using google translate + dictionary
+
+-   Older text digital transcriptions often have errors
+
+**PROS**: 
+
+-   Would help to integrate an underutilized source of information
+
+-   Potentially interesting statistical approaches for integrating these different data streams
+
+**CONS**: 
+
+-   Difficult because I don’t speak olelo 
+
+-   Limited geographic info 
+
+**PLAN:**
+
+-   Find undergrad interested in ʻōlelo Hawaiʻi and also biology/CS to assist in data collection
+
+-   Find collaborator who knows about biocultural practice, ʻōiwi knowledge
+
+-   Curate data with CARE principles 
+
+-   Once data are collected, integrate with survey data (e.g. eBird), museum collections, etc to create range maps
+
+-   **DELIVERABLE:** manuscript presenting best inference of pre-contact ranges 
+
+-   Key personnel: 
+
+    -   Noelani Puniwai–professor Hawaiʻinuiākea, biocultural expert 
+
+    -   Mehana Vahn–professor NREM, biocultural expert, also uses moʻolelo for conservation applications
+
+    -   Kahanuola Tabor–professor Hawaiian Language, could be interested in collab, or at least help find undergrads 
+
+    -   Noah Gomes - UH Hilo Phd student? [Pilina project](https://storymaps.arcgis.com/stories/7ab539af97314852b1d68249797b1297)
+
+    -   Healoha Johnston–Bishop, feather work
+
+    -   Marquez Marcan–Bishop, feather work
+
+    -   Leah Pualahaʻole Caldeira - bishop museum library and archive collection manager
+
+### **Creating a finer resolution occurrence dataset using Ebird** 
+
+Combine with Nupepa analysis to add higher spatial resolution 
+
+Use maxent to do pairwise occurrence (logOR) given data we have from ebird and previous range data
+
+-   More refined way of determining which species co-occur
+
+    -   Calculate estimate and confidence around estimate rather than just base range overlap
+
+-   Numerical way of combining different data sources
+
+-   Probably can do with a single clade within honeycreepers - like iiwi and sisters or something - that have more extant species 
+
+    -   Can tell us about how competition and niche partitioning influenced the crazy beak morphos of this clade
+
+-   Older surveys perhaps locality eror?
+
+-   Survey still ongoing 
+
+Does the community structure predict the occurrence of a focal species? 
+
+-   Tying in conservation issues
+
+    -   Birds are going extinct in habitats they should be in
+
+<!-- -->
+
+-   Maybe because of biotic factors? 
+
+    -   Well yes for sure bc of avian malaria but other stuff too?
+
+Perhaps look at how niche space is being filled in with introduced birds? Relate with modern community compo form ebird
+
+-   Think of morpho onslaught of introduced birds!
+
+<!-- -->
+
+-   Older papers about which introduced birds would stick? 
+
+    -   Forgot which one, but shows that introduced birds have higher prob of becoming resident if they fulfill a niche not currently occupied
+
+**PROS**: 
+
+-   Free! 
+
+**CONS**: 
+
+-   Possibly inaccurate, uneven sampling 
+
+-   Not applicable for species that went extinct a longer time ago (like akialoas)
+
+**PLAN:**
+
+-   Pull and clean data from eBird, look into Cornell Lab for cleaning methods
+
+-   Make species distribution models in combination with other data:
+
+    -   Museum records
+
+    -   Field notes
+
+        -   Pyle
+
+        -   Perkins
+
+    -   nūpepa/moʻolelo
+
+        -   Look into Gomesʻs work with kanaka maoli historians 
+
+-   **DELIVERABLES:**
+
+    -   Same as nūpepa/moʻolelo 
+
+    -   Possibly distinct deliverable is detailed info on fine scale co-occurrence (could be separate deliverable cause could go into different downstream analysis)
+
+-   Key personnel
+
+    -   Allen Allison–Bishop, fieldnotes, surveys entered into eBird, midden material, occurrence records at museum generally 
+
+    -   Noah Gomes for kanaka maoli historians 
+
+## Chapter 2 - either pop gen or beak morpho measurements
+
+## Chapter 3 - eco-biogeo analysis
