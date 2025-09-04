@@ -2,19 +2,20 @@
 title: "Dissertation Proposal"
 format: html
 editor: visual
+bibliography: references.bib
 ---
 
 ## Chapter 1 - Historic range reconstruction
 
 ### **Intro**
 
-The modern range of the Hawaiian Honeycreepers is severely constricted by anthropogenic forces. Habitat destruction, avian malaria, and invasive species, to name a few, have pushed most honeycreeper populations to flee to higher elevations or face extinction. These antropogenic range shifts confound biogeograpic analyses, making it impossible to truly measure the strength of biogeographic effects on this radiation.
+The modern range of the Hawaiʻian honeycreepers is severely constricted by anthropogenic forces. Habitat destruction, avian malaria, and invasive species, to name a few, have pushed most honeycreeper populations to extinction or to higher elevation habitats. [@callicrate2014][@guillaumet2017] These antropogenic range shifts confound biogeograpic analyses, making it impossible to truly measure the strength of biogeographic effects on this radiation.
 
-The true "undisturbed" ranges of the HI honeycreepers are well and truly lost to time, but there are many sources of info that could help get us closer to this true range. For one, there is much traditional ecological knowledge of the honeycreepers. These forest birds hold strong cultural ties to the native Hawaiians, as they were hunted a source of food and for their feathers. Though integrating this data may be less straightforward (language barriers, different taxonomic understanding, diminishing cultural practice), this actually opens up windows for inter-disciplinary collaboration. (how do i say this) In addition, western science often neglects these vast sources of information. Working to collate and integrate indigenous knowledge will not only help to bolster range data, but also serve as an example of methods to utilizing indigenous knowledge.
+The numerous ornithological expeditions to the Hawaiʻian islands produced many written accounts and museum specimens. While the honeycreeper ranges were certainly already constricted then, many of these data were still collected before the mass extinctions of the early 1900s, due to the introduction of avian malaria to the islands. [@samuel2015a][@warner1968] Many of the specimens' tag info are available on online databases, such as iDigBio, and written accounts are available through early publications like *Aves Hawaiienses : the birds of the Sandwich Islands.*[@wilson1890]
 
--   fossil evidence + museum specimen data
+In addition, there is much pre-western contact indigenous knowledge of the honeycreepers. These forest birds hold strong cultural significance, as they were hunted a source of food and for their feathers. [@gomes2020] There has been much work in the last century to preserve native Hawaiʻian knowledge, culture, and text. Many digitized documents remain largely unexplored for honeycreeper range data. Though this type of information is often passed over by western science due to difficulty integrating it into western scientific frameworks (language barriers, different taxonomic understanding, etc), leaning into these challenges opens up opportunities for inter-disciplinary collaboration. Working to collate and integrate indigenous Hawaiian knowledge will not only help to bolster range data, but provide a case study to utilizing indigenous knowledge.
 
-In order to mitigate this, I will attempt to reconstruct the historic ranges of the HI honeycreepers, combining many different sources of data
+The true, pre-human ranges of the Hawaʻian honeycreepers are lost to time, but fragments of information can help us to recreate these undisturbed ranges. Working backwards through time through multiple information sources will garner enough info to reconstruct the historic ranges of the honeycreepers. This work can inform conservation efforts to answer questions like which areas are most relevant for restoration, possibly identifying candidate sites which may have been overlooked because of lack of evidence of bird habitation.
 
 ### **Methods**
 
@@ -88,7 +89,7 @@ Translations start from about the 1980s, previous text is untranslated
 
     -   Leah Pualahaʻole Caldeira - bishop museum library and archive collection manager
 
-### **Creating a finer resolution occurrence dataset using Ebird** 
+### **Creating a finer resolution occurrence dataset using Ebird**
 
 Combine with Nupepa analysis to add higher spatial resolution 
 
