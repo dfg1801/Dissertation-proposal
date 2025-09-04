@@ -9,9 +9,9 @@ bibliography: references.bib
 
 ### **Intro**
 
-The modern range of the Hawaiʻian honeycreepers is severely constricted by anthropogenic forces. Habitat destruction, avian malaria, and invasive species, to name a few, have pushed most honeycreeper populations to extinction or to higher elevation habitats. [@callicrate2014][@guillaumet2017] These antropogenic range shifts confound biogeograpic analyses, making it impossible to truly measure the strength of biogeographic effects on this radiation.
+The modern range of the Hawaiʻian honeycreepers is severely constricted by anthropogenic forces. Habitat destruction, avian malaria, and invasive species, to name a few, have pushed most honeycreeper populations to extinction or to higher elevation habitats. [@callicrate2014][@guillaumet2017] These antropogenic range shifts confound biogeograpic analyses, making it impossible to truly measure the strength of biogeographic effects on this radiation. To solve this, I will reconstruct the honeycreepers range
 
-The numerous ornithological expeditions to the Hawaiʻian islands produced many written accounts and museum specimens. While the honeycreeper ranges were certainly already constricted then, many of these data were still collected before the mass extinctions of the early 1900s, due to the introduction of avian malaria to the islands. [@samuel2015a][@warner1968] Many of the specimens' tag info are available on online databases, such as iDigBio, and written accounts are available through early publications like *Aves Hawaiienses : the birds of the Sandwich Islands.*[@wilson1890]
+The numerous early ornithological expeditions to the Hawaiʻian islands produced many written accounts and museum specimens. While the honeycreeper ranges were certainly already constricted then, many of these data were still collected before the mass extinctions of the early 1900s, due to the introduction of avian malaria to the islands. [@samuel2015a][@warner1968] Many of the specimens' tag info are available on online databases, such as iDigBio, and written accounts are available through early publications like *Aves Hawaiienses : the birds of the Sandwich Islands.*[@wilson1890]
 
 In addition, there is much pre-western contact indigenous knowledge of the honeycreepers. These forest birds hold strong cultural significance, as they were hunted a source of food and for their feathers. [@gomes2020] There has been much work in the last century to preserve native Hawaiʻian knowledge, culture, and text. Many digitized documents remain largely unexplored for honeycreeper range data. Though this type of information is often passed over by western science due to difficulty integrating it into western scientific frameworks (language barriers, different taxonomic understanding, etc), leaning into these challenges opens up opportunities for inter-disciplinary collaboration. Working to collate and integrate indigenous Hawaiian knowledge will not only help to bolster range data, but provide a case study to utilizing indigenous knowledge.
 
@@ -19,157 +19,23 @@ The true, pre-human ranges of the Hawaʻian honeycreepers are lost to time, but 
 
 ### **Methods**
 
-Pull info from museum specimen logs, fossil data, as well as from verbal accounts (capt. cook etc) and nupepaa accounts + possibly combine with modern ebird data
+**Early accounts + museum specimens**
 
--   take museum specimen data from idigbio,
+Many early accounts of the honeycreepers, like *Aves Hawaiienses*[@wilson1890a]*, Birds of the Hawaiian Islands*[@henshaw1902]*, etc.,* are available freely online. I will comb through these sources and catalog early observations of these birds. As these accounts are from the time before the advent of a GPS, I will geolocate described observations as point localities or polygons if applicable
 
-    -   need to clean + inspect entries with missing info (using other papers) such as...
+In addition, I will gather online museum specimen entries from iDigBio. Querying for fringilidae family specimens bound to the central pacific (Query: {"filtered": {"filter": {"and": \[{"geo_bounding_box": {"geopoint": {"bottom_right": {"lat": 13.923403897723347, "lon": -148.35937500000003}, "top_left": {"lat": 27.68352808378776, "lon": -169.80468750000003}}}}, {"term": {"family": "fringillidae"}}\]}}}), I will then sift through the entries to fill in any possible unspecific missing info (such as year and locality) based on the information gathered in the above early account search, matching this info based on collector and previously abstracted specimen labels, as detailed in [@banko2007]. In addition, I will correct or remove any listed geographic coordinates that do not match the locality listed, or are clearly extraneous (such as being placed in the middle of the ocean).
 
-    -   XY coord data
+**Nupepa+mo'olelo**
 
-    -   dates
+I will query the uluka'u library's nupepa catalog for the hawaiian names of the honeycreepers. This query results in over 1000 entries published from 1844-2023, though many are duplicate. For the purpose I am seeking, I will only select pre-1900s entries (525 hits). Early nupepa in the catalog are only machine transcribed and also not translated, which poses difficulty in interpreting the information. To start, I will trim duplicates and correct any errors in the machine transcription. I will then roughly translate some of the earliest entries to the best of my ability to identify entries of highest interest. I will work with a collaborator versed in ōlelo and ʻōiwi knowledge to do full translations. From there, I will build maps with either polygon or point localities.
 
-    -   collectors
+I will also search through the UH Hawaii Legendʻs Index to find moʻolelo associated with any honeycreepers. From these, I will try to interpret any place names to polygon or point localities. (unsure of how successful this will be)
 
--   then do weighted reconstruction (?), with more weight on older accounts? bayesian multi-info integration?
+Working with a collaborator, as well as with Dr. Rominger, I will ensure this data is collected in alginment with CARE principles. I will work with Local Contexts to properly credit and tag information to their relevant Native Hawaiian community groups.
 
-Depending on how good the data turns out, either develop maps or use niche modeling techniques
+**Final combo mapping**
 
-### **Nupepa analysis**
-
-From just searching the bird names 995 hits
-
--   Many are repeat entries though, especially the older entries
-
--   Seems like there may not be much spatial information
-
-Translations start from about the 1980s, previous text is untranslated
-
--   Can get general idea of translation from using google translate + dictionary
-
--   Older text digital transcriptions often have errors
-
-**PROS**: 
-
--   Would help to integrate an underutilized source of information
-
--   Potentially interesting statistical approaches for integrating these different data streams
-
-**CONS**: 
-
--   Difficult because I don’t speak olelo 
-
--   Limited geographic info 
-
-**PLAN:**
-
--   Find undergrad interested in ʻōlelo Hawaiʻi and also biology/CS to assist in data collection
-
--   Find collaborator who knows about biocultural practice, ʻōiwi knowledge
-
--   Curate data with CARE principles 
-
--   Once data are collected, integrate with survey data (e.g. eBird), museum collections, etc to create range maps
-
--   **DELIVERABLE:** manuscript presenting best inference of pre-contact ranges 
-
--   Key personnel: 
-
-    -   Noelani Puniwai–professor Hawaiʻinuiākea, biocultural expert 
-
-    -   Mehana Vahn–professor NREM, biocultural expert, also uses moʻolelo for conservation applications
-
-    -   Kahanuola Tabor–professor Hawaiian Language, could be interested in collab, or at least help find undergrads 
-
-    -   Noah Gomes - UH Hilo Phd student? [Pilina project](https://storymaps.arcgis.com/stories/7ab539af97314852b1d68249797b1297)
-
-    -   Healoha Johnston–Bishop, feather work
-
-    -   Marquez Marcan–Bishop, feather work
-
-    -   Leah Pualahaʻole Caldeira - bishop museum library and archive collection manager
-
-### **Creating a finer resolution occurrence dataset using Ebird**
-
-Combine with Nupepa analysis to add higher spatial resolution 
-
-Use maxent to do pairwise occurrence (logOR) given data we have from ebird and previous range data
-
--   More refined way of determining which species co-occur
-
-    -   Calculate estimate and confidence around estimate rather than just base range overlap
-
--   Numerical way of combining different data sources
-
--   Probably can do with a single clade within honeycreepers - like iiwi and sisters or something - that have more extant species 
-
-    -   Can tell us about how competition and niche partitioning influenced the crazy beak morphos of this clade
-
--   Older surveys perhaps locality eror?
-
--   Survey still ongoing 
-
-Does the community structure predict the occurrence of a focal species? 
-
--   Tying in conservation issues
-
-    -   Birds are going extinct in habitats they should be in
-
-<!-- -->
-
--   Maybe because of biotic factors? 
-
-    -   Well yes for sure bc of avian malaria but other stuff too?
-
-Perhaps look at how niche space is being filled in with introduced birds? Relate with modern community compo form ebird
-
--   Think of morpho onslaught of introduced birds!
-
-<!-- -->
-
--   Older papers about which introduced birds would stick? 
-
-    -   Forgot which one, but shows that introduced birds have higher prob of becoming resident if they fulfill a niche not currently occupied
-
-**PROS**: 
-
--   Free! 
-
-**CONS**: 
-
--   Possibly inaccurate, uneven sampling 
-
--   Not applicable for species that went extinct a longer time ago (like akialoas)
-
-**PLAN:**
-
--   Pull and clean data from eBird, look into Cornell Lab for cleaning methods
-
--   Make species distribution models in combination with other data:
-
-    -   Museum records
-
-    -   Field notes
-
-        -   Pyle
-
-        -   Perkins
-
-    -   nūpepa/moʻolelo
-
-        -   Look into Gomesʻs work with kanaka maoli historians 
-
--   **DELIVERABLES:**
-
-    -   Same as nūpepa/moʻolelo 
-
-    -   Possibly distinct deliverable is detailed info on fine scale co-occurrence (could be separate deliverable cause could go into different downstream analysis)
-
--   Key personnel
-
-    -   Allen Allison–Bishop, fieldnotes, surveys entered into eBird, midden material, occurrence records at museum generally 
-
-    -   Noah Gomes for kanaka maoli historians 
+Maps of modern honeycreeper ranges exist, such as from the IUCN redlist, or from expert books, such as The Hawiian Honeycreepers by H. Douglas Pratt. In addition, I will collect point occurrence data from the Hawaii forest bird surveys (1970s-present). I will then convert polygons to spatial offsets in order to combine with the point-locality entries in Maxent species distribution models. [@merow2017]
 
 ## Chapter 2 - either pop gen or beak morpho measurements
 
