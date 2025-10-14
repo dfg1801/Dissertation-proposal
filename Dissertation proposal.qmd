@@ -25,9 +25,9 @@ Many early accounts of the honeycreepers, like *Aves Hawaiienses*[@wilson1890a]*
 
 In addition, I will gather online museum specimen entries from iDigBio. Querying for fringilidae family specimens bound to the central pacific (Query: {"filtered": {"filter": {"and": \[{"geo_bounding_box": {"geopoint": {"bottom_right": {"lat": 13.923403897723347, "lon": -148.35937500000003}, "top_left": {"lat": 27.68352808378776, "lon": -169.80468750000003}}}}, {"term": {"family": "fringillidae"}}\]}}}), I will then sift through the entries to fill in any possible unspecific missing info (such as year and locality) based on the information gathered in the above early account search, matching this info based on collector and previously abstracted specimen labels, as detailed in [@banko2007]. In addition, I will correct or remove any listed geographic coordinates that do not match the locality listed, or are clearly extraneous (such as being placed in the middle of the ocean).
 
-**Nupepa+mo'olelo**
+**Hawaiian Language Sources**
 
-I will query the uluka'u library's nupepa catalog for the hawaiian names of the honeycreepers. This query results in over 1000 entries published from 1844-2023, though many are duplicate. For the purpose I am seeking, I will only select pre-1900s entries (525 hits). Early nupepa in the catalog are only machine transcribed and also not translated, which poses difficulty in interpreting the information. To start, I will trim duplicates and correct any errors in the machine transcription. I will then roughly translate some of the earliest entries to the best of my ability to identify entries of highest interest. I will work with a collaborator versed in ōlelo and ʻōiwi knowledge to do full translations. From there, I will build maps with either polygon or point localities.
+I will query the Papkilo database for the hawaiian names of the honeycreepers. This query results in over 1000 entries of nupepa (Hawaiian language newspapers), published from 1844-2023, though many are duplicate. For the purpose I am seeking, I will only select pre-1900s entries (525 hits). Most entries in the catalog are only machine transcribed and also not translated, which poses difficulty in interpreting the information. To start, I will trim duplicates and correct any errors in the machine transcription. I will then roughly translate some of the earliest entries to the best of my ability to identify entries of highest interest. I will work with a collaborator versed in ōlelo and ʻōiwi knowledge to do full translations. Reported ranges will From there, I will build maps with either polygon or point localities.
 
 I will also search through the UH Hawaii Legendʻs Index to find moʻolelo associated with any honeycreepers. From these, I will try to interpret any place names to polygon or point localities. (unsure of how successful this will be)
 
@@ -35,8 +35,24 @@ Working with a collaborator, as well as with Dr. Rominger, I will ensure this da
 
 **Final combo mapping**
 
-Maps of modern honeycreeper ranges exist, such as from the IUCN redlist, or from expert books, such as The Hawiian Honeycreepers by H. Douglas Pratt. In addition, I will collect point occurrence data from the Hawaii forest bird surveys (1970s-present). I will then convert polygons to spatial offsets in order to combine with the point-locality entries in Maxent species distribution models. [@merow2017]
+Maps of modern honeycreeper ranges exist, such as from the IUCN redlist, or from expert books, such as *The Hawiian Honeycreepers* by H. Douglas Pratt. In addition, I will collect point occurrence data from the Hawaii forest bird surveys (1970s-present). I will then convert polygons to spatial offsets in order to combine with the point-locality entries in Maxent species distribution models. [@merow2017]
 
 ## Chapter 2 - either pop gen or beak morpho measurements
 
-## Chapter 3 - eco-biogeo analysis
+work with brett mossman's specimen photo collection for beak morpho measurements - data tags - add measurements database like avonet??
+
+## Chapter 3 - Eco-biogeo analysis
+
+### Intro
+
+Island adaptive radiations (ARs) provide a unique opportunity for biologists to test hypotheses about eco-evolutionary drivers of diversification. The isolation of oceanic high islands limits immigration, producing more readily interpretable diversification histories from single colonization events1. The isolated geography and resultant ecosystems of remote islands have long been hypothesized to promote ARs through eco-evolutionary feedbacks, but the mechanistic reasons remain unresolved. An exemplary eco-evolutionary system is found in the correlation between beak morphology and feeding ecology in avian clades, particularly in passerines.
+
+The chronological formation of the Hawaiian (HI) island chain creates a unique system to study the interaction between geography and ecology on speciation. In the HI Islands, biogeographic patterns of evolution, such as Hennig’s progression rule, in which younger clades are found exclusively on geologically younger islands, have been documented in many HI endemics, cementing the signature that Hawaii’s unique geography has had on its flora and fauna3. However, the precise mechanism behind this rule is unclear. When establishing on a newly-formed island, species have an increase in habitable area (island theory of biogeography) as well as new, unoccupied niche space (ecological release). While both of these opportunities - geographical and ecological- contribute to the multiple ARs of HI species, it is unclear to what extent each effect has on rates of speciation.
+
+The HI honeycreeper radiation is a classic example of an AR with an extreme diversity of beak morphology which coevolved to utilize different feeding ecologies. Despite substantial work documenting the HI honeycreeper’s morphologies and phylogenetic relationships, it remains an open question whether speciation is driven by geographic isolation followed by local adaptation or if ecologically-mediated selection can drive speciation in sympatry3. Using the newly enhanced phylogenetic and biogeographic data from chapter 1 I will test three hypotheses: H1 Geographic opportunity - speciation requires initial geographic isolation; H2 Ecological opportunity - speciation requires populations to be driven into new ecological niches via competition and mutualism; and H3 Eco-geographic interactions - neither geographic nor ecological opportunity are sufficient on their own.
+
+### Methods
+
+To test my three hypotheses I will compare the phylogenetic signals of beak morphology and geographic ranges to evolutionary null models - Brownian motion for morphology and a highly DEC model for rages. This DEC model will explicitly rule out impossible biogeographic state spaces (so that islands that haven't emerged yet cannot be colonized) I predict that under H1 morphology will conform to Brownian motion while geographic ranges will diverge from the DEC model. Conversely, I predict that under H2 morphology will diverge from Brownian motion while geographic ranges will conform to the DEC model. Under H3 I predict both morphology and ranges will diverge from their respective null models. 
+
+Test out the rate of change through time, see if there is spikes - if no genetic data use LTT, otherwise use diversification rate estimate
