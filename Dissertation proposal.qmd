@@ -5,43 +5,51 @@ editor: visual
 bibliography: references.bib
 ---
 
-## Chapter 1 - Historic range reconstruction
+## Chapter 1 - Hawaiian knowledge sources
 
-### **Intro**
+### Intro
 
-The modern range of the Hawaiʻian honeycreepers is severely constricted by anthropogenic forces. Habitat destruction, avian malaria, and invasive species, to name a few, have pushed most honeycreeper populations to extinction or to higher elevation habitats. [@callicrate2014][@guillaumet2017] These antropogenic range shifts confound biogeograpic analyses, making it impossible to truly measure the strength of biogeographic effects on this radiation. To solve this, I will reconstruct the honeycreepers range
+There is much pre-western contact indigenous knowledge of the Hawaiʻian honeycreepers. These forest birds hold strong cultural significance, as they were hunted a source of food and for their feathers. [@gomes2020] There has been much work in the last century to preserve native Hawaiʻian knowledge, culture, and text. Many digitized documents remain largely unexplored for honeycreeper range data. Though this type of information is often passed over by western science due to difficulty integrating it into western scientific frameworks (language barriers, different taxonomic understanding, etc), leaning into these challenges opens up opportunities for inter-disciplinary collaboration. Working to collate and integrate indigenous Hawaiian knowledge will not only help to bolster range data, but provide a case study to utilizing indigenous knowledge.
+
+Believing in and valuing Indigenous knowledge is essential to the decolonization of science. In my research I will ensure that I ethically integrate Indigenous sources of knowledge in a fair and equitable manner. Towards this end, I will work with Dr. Rominger to follow CARE practices for Indigenous data sovereignty14, as well as integrate best practices for community partnership in this project as proposed by the Kūlana Noiʻi15. This will ensure that Native Hawaiian communities maintain control over their data, and that use of their data is properly credited, including through co-authorship. Examples of using CARE principles in biodiversity research and natural history museum collections are growing16 but have not yet widely been operationalized in Hawaiʻi, thus motivating my contribution to this effort.
+
+### **Methods**
+
+I will query the Papakilo database for the Hawaiian names of the honeycreepers. This query results in over 1000 entries of nupepa (Hawaiian language newspapers), published from 1844-2023, though many are duplicate. For the purpose I am seeking, I will only select pre-1900s entries (525 hits). Most entries in the catalog are only machine transcribed and also not translated, which poses difficulty in interpreting the information. To start, I will trim duplicates and correct any errors in the machine transcription. I will then roughly translate some of the earliest entries to the best of my ability to identify entries of highest interest.
+
+Any information in ōlelo Hawaiʻi will require deep knowledge of the language to accurately translate I will work with a collaborator versed in ōlelo and ʻōiwi knowledge to do full translation. Sensitivity in clarifying the relationships of the birds to their places is critical, as Hawaiʻian texts are rich with poetical meanings and place names lost to time. Once these stories are translated, I will build maps with honeycreepersʻ association with places represented in polygons. Working with a collaborator, as well as with Dr. Rominger, I will ensure this data is collected in alginment with CARE principles. I will work with Local Contexts to properly credit and tag information to their relevant Native Hawaiian community groups.
+
+## Chapter 2 - Historic range reconstructions
+
+### Intro
+
+The modern range of the Hawaiʻian honeycreepers is severely constricted by anthropogenic forces. Habitat destruction, avian malaria, and invasive species, to name a few, have pushed most honeycreeper populations to extinction or to higher elevation habitats. [@callicrate2014][@guillaumet2017] These antropogenic range shifts confound biogeograpic analyses, making it impossible to truly measure the strength of biogeographic effects on this radiation. To solve this, I will reconstruct the honeycreepers range using data collected before 1900, including data from chapter 1, in a species distribution model.
 
 The numerous early ornithological expeditions to the Hawaiʻian islands produced many written accounts and museum specimens. While the honeycreeper ranges were certainly already constricted then, many of these data were still collected before the mass extinctions of the early 1900s, due to the introduction of avian malaria to the islands. [@samuel2015a][@warner1968] Many of the specimens' tag info are available on online databases, such as iDigBio, and written accounts are available through early publications like *Aves Hawaiienses : the birds of the Sandwich Islands.*[@wilson1890]
-
-In addition, there is much pre-western contact indigenous knowledge of the honeycreepers. These forest birds hold strong cultural significance, as they were hunted a source of food and for their feathers. [@gomes2020] There has been much work in the last century to preserve native Hawaiʻian knowledge, culture, and text. Many digitized documents remain largely unexplored for honeycreeper range data. Though this type of information is often passed over by western science due to difficulty integrating it into western scientific frameworks (language barriers, different taxonomic understanding, etc), leaning into these challenges opens up opportunities for inter-disciplinary collaboration. Working to collate and integrate indigenous Hawaiian knowledge will not only help to bolster range data, but provide a case study to utilizing indigenous knowledge.
 
 The true, pre-human ranges of the Hawaʻian honeycreepers are lost to time, but fragments of information can help us to recreate these undisturbed ranges. Working backwards through time through multiple information sources will garner enough info to reconstruct the historic ranges of the honeycreepers. This work can inform conservation efforts to answer questions like which areas are most relevant for restoration, possibly identifying candidate sites which may have been overlooked because of lack of evidence of bird habitation.
 
 ### **Methods**
 
-**Early accounts + museum specimens**
+#### **Early accounts + museum specimens**
 
 Many early accounts of the honeycreepers, like *Aves Hawaiienses*[@wilson1890a]*, Birds of the Hawaiian Islands*[@henshaw1902]*, etc.,* are available freely online. I will comb through these sources and catalog early observations of these birds. As these accounts are from the time before the advent of a GPS, I will geolocate described observations as point localities or polygons if applicable
 
-In addition, I will gather online museum specimen entries from iDigBio. Querying for fringilidae family specimens bound to the central pacific (Query: {"filtered": {"filter": {"and": \[{"geo_bounding_box": {"geopoint": {"bottom_right": {"lat": 13.923403897723347, "lon": -148.35937500000003}, "top_left": {"lat": 27.68352808378776, "lon": -169.80468750000003}}}}, {"term": {"family": "fringillidae"}}\]}}}), I will then sift through the entries to fill in any possible unspecific missing info (such as year and locality) based on the information gathered in the above early account search, matching this info based on collector and previously abstracted specimen labels, as detailed in [@banko2007]. In addition, I will correct or remove any listed geographic coordinates that do not match the locality listed, or are clearly extraneous (such as being placed in the middle of the ocean).
+In addition, I will gather online museum specimen entries from iDigBio. Querying for *fringilidae* family specimens bound to the central pacific (Query: {"filtered": {"filter": {"and": \[{"geo_bounding_box": {"geopoint": {"bottom_right": {"lat": 13.923403897723347, "lon": -148.35937500000003}, "top_left": {"lat": 27.68352808378776, "lon": -169.80468750000003}}}}, {"term": {"family": "fringillidae"}}\]}}}), I will then sift through the entries to fill in any possible unspecific missing info (such as year and locality) based on the information gathered in the above early account search, matching this info based on collector and previously abstracted specimen labels, as detailed in [@banko2007]. In addition, I will correct or remove any listed geographic coordinates that do not match the locality listed, or are clearly extraneous (such as being placed in the middle of the ocean).
 
-**Hawaiian Language Sources**
+#### **Final combo mapping**
 
-I will query the Papkilo database for the hawaiian names of the honeycreepers. This query results in over 1000 entries of nupepa (Hawaiian language newspapers), published from 1844-2023, though many are duplicate. For the purpose I am seeking, I will only select pre-1900s entries (525 hits). Most entries in the catalog are only machine transcribed and also not translated, which poses difficulty in interpreting the information. To start, I will trim duplicates and correct any errors in the machine transcription. I will then roughly translate some of the earliest entries to the best of my ability to identify entries of highest interest. I will work with a collaborator versed in ōlelo and ʻōiwi knowledge to do full translations. Reported ranges will From there, I will build maps with either polygon or point localities.
+Maps of modern honeycreeper ranges exist, such as from the IUCN redlist, or from books, such as The Hawaiian Honeycreepers by H. Douglas Pratt. In addition, I will collect point occurrence data from the Hawaii forest bird surveys (1970s-present). These data will be combined with the data gathered above and from Chapter 1. Depending on the amount and quality of the data, I will take one of three approaches.
 
-I will also search through the UH Hawaii Legendʻs Index to find moʻolelo associated with any honeycreepers. From these, I will try to interpret any place names to polygon or point localities. (unsure of how successful this will be)
+1.  Poisson point distribution model with using presence-only (PO) museum specimen data and the data from chapter 1 as a spatial offset. [@merow2017] This will be done with R package spatstat. This method requires a raster-type input for the spatial offset. The grid size (resolution) of this raster will be determined based on the resolution of the PO data. The offset boundaries will be defined using a smoothing function, so that the harsh edge of the polygon can instead be a smooth gradient of probability. This more accurately represents the uncertainty of the data and is more biologically accurate. (species arenʻt just going to hit a wall and stop)
 
-Working with a collaborator, as well as with Dr. Rominger, I will ensure this data is collected in alginment with CARE principles. I will work with Local Contexts to properly credit and tag information to their relevant Native Hawaiian community groups.
+<!-- -->
 
-**Final combo mapping**
+2.  Integrated nested Laplace approximated bayesian models using R package *inlabru* [@bachl2019]. These methods account for spatial autocorrelation using Gaussian random fields. PO data is modeled using a log-Gaussian Cox process model. The polygon data (from chapter 1) can be integrated in two ways -
 
-Maps of modern honeycreeper ranges exist, such as from the IUCN redlist, or from expert books, such as *The Hawiian Honeycreepers* by H. Douglas Pratt. In addition, I will collect point occurrence data from the Hawaii forest bird surveys (1970s-present). I will then convert polygons to spatial offsets in order to combine with the point-locality entries in Maxent species distribution models. [@merow2017]
+    a\. As a prior to the model. This will be done similarly to the spatial offset method above, where the polygons' borders will be smoothed and turned into a raster, then used as the gaussian prior distribution. [@gryba2024]
 
-## Chapter 2 - either pop gen or beak morpho measurements
-
-work with brett mossman's specimen photo collection for beak morpho measurements - data tags - add measurements database like avonet??
-
-Working with Dr. Fleischman and Dr. James from the smithsonian to create an updated database in combination with Brett Mossman's honeycreeper photos, adding their measurements to the AVONET database
+    b\. As a second dataset. This requires a joint likelihood model approach, where a likelihood is first modeled for each dataset individually, then jointly modeled. The PO data will again be modeled using a log-Gaussian Cox process model. The polygon data will (be rasterized? idk help)
 
 ## Chapter 3 - Eco-biogeo analysis
 
