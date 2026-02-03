@@ -1,6 +1,6 @@
 ---
 title: "Dissertation Proposal"
-format: html
+format: pdf
 editor: visual
 bibliography: references.bib
 ---
@@ -11,7 +11,7 @@ bibliography: references.bib
 
 There is much pre-western contact indigenous knowledge of the Hawaiʻian honeycreepers. These forest birds hold strong cultural significance, as they were hunted a source of food and for their feathers. [@gomes2020] There has been much work in the last century to preserve native Hawaiʻian knowledge, culture, and text. Many digitized documents remain largely unexplored for honeycreeper range data. Though this type of information is often passed over by western science due to difficulty integrating it into western scientific frameworks (language barriers, different taxonomic understanding, etc), leaning into these challenges opens up opportunities for inter-disciplinary collaboration. Working to collate and integrate indigenous Hawaiian knowledge will not only help to bolster range data, but provide a case study to utilizing indigenous knowledge.
 
-Believing in and valuing Indigenous knowledge is essential to the decolonization of science. In my research I will ensure that I ethically integrate Indigenous sources of knowledge in a fair and equitable manner. Towards this end, I will work with Dr. Rominger to follow CARE practices for Indigenous data sovereignty14, as well as integrate best practices for community partnership in this project as proposed by the Kūlana Noiʻi15. This will ensure that Native Hawaiian communities maintain control over their data, and that use of their data is properly credited, including through co-authorship. Examples of using CARE principles in biodiversity research and natural history museum collections are growing16 but have not yet widely been operationalized in Hawaiʻi, thus motivating my contribution to this effort.
+Believing in and valuing Indigenous knowledge is essential to the decolonization of science. In my research I will ensure that I ethically integrate Indigenous sources of knowledge in a fair and equitable manner. Towards this end, I will work with Dr. Rominger to follow CARE practices for Indigenous data sovereignty, as well as integrate best practices for community partnership in this project as proposed by the Kūlana Noiʻi. [@hutchins2025][@kulananoi`iworkinggroup2021] This will ensure that Native Hawaiian communities maintain control over their data, and that use of their data is properly credited, including through co-authorship. Examples of using CARE principles in biodiversity research and natural history museum collections are growing16 but have not yet widely been operationalized in Hawaiʻi, thus motivating my contribution to this effort.
 
 ### **Methods**
 
@@ -19,11 +19,13 @@ I will query the Papakilo database for the Hawaiian names of the honeycreepers. 
 
 Any information in ōlelo Hawaiʻi will require deep knowledge of the language to accurately translate I will work with a collaborator versed in ōlelo and ʻōiwi knowledge to do full translation. Sensitivity in clarifying the relationships of the birds to their places is critical, as Hawaiʻian texts are rich with poetical meanings and place names lost to time. Once these stories are translated, I will build maps with honeycreepersʻ association with places represented in polygons. Working with a collaborator, as well as with Dr. Rominger, I will ensure this data is collected in alginment with CARE principles. I will work with Local Contexts to properly credit and tag information to their relevant Native Hawaiian community groups.
 
+-   Hopefully can work with the insitute of hawaiian language and translation?
+
 ## Chapter 2 - Historic range reconstructions
 
 ### Intro
 
-The modern range of the Hawaiʻian honeycreepers is severely constricted by anthropogenic forces. Habitat destruction, avian malaria, and invasive species, to name a few, have pushed most honeycreeper populations to extinction or to higher elevation habitats. [@callicrate2014][@guillaumet2017] These antropogenic range shifts confound biogeograpic analyses, making it impossible to truly measure the strength of biogeographic effects on this radiation. To solve this, I will reconstruct the honeycreepers range using data collected before 1900, including data from chapter 1, in a species distribution model.
+The modern range of the Hawaiʻian honeycreepers is severely constricted by anthropogenic forces. Habitat destruction, avian malaria, and invasive species, to name a few, have pushed most honeycreeper populations to extinction or to higher elevation habitats. [@callicrate2014][@guillaumet2017] These anthropogenic range shifts confound biogeographic analyses, making it impossible to truly measure the strength of biogeographic effects on this radiation. To solve this, I will reconstruct the honeycreepers range using data collected before 1900, including data from chapter 1, in a species distribution model.
 
 The numerous early ornithological expeditions to the Hawaiʻian islands produced many written accounts and museum specimens. While the honeycreeper ranges were certainly already constricted then, many of these data were still collected before the mass extinctions of the early 1900s, due to the introduction of avian malaria to the islands. [@samuel2015a][@warner1968] Many of the specimens' tag info are available on online databases, such as iDigBio, and written accounts are available through early publications like *Aves Hawaiienses : the birds of the Sandwich Islands.*[@wilson1890]
 
@@ -33,38 +35,60 @@ The true, pre-human ranges of the Hawaʻian honeycreepers are lost to time, but 
 
 #### **Early accounts + museum specimens**
 
-Many early accounts of the honeycreepers, like *Aves Hawaiienses*[@wilson1890a]*, Birds of the Hawaiian Islands*[@henshaw1902]*, etc.,* are available freely online. I will comb through these sources and catalog early observations of these birds. As these accounts are from the time before the advent of a GPS, I will geolocate described observations as point localities or polygons if applicable
+Many early accounts of the honeycreepers, like *Aves Hawaiienses*[@wilson1890]*, Birds of the Hawaiian Islands* [@henshaw1902]*, etc.,* are available freely online. I will comb through these sources and catalog early observations of these birds. As these accounts are from the time before the advent of a GPS, I will geolocate described observations as point localities or polygons if applicable
 
 In addition, I will gather online museum specimen entries from iDigBio. Querying for *fringilidae* family specimens bound to the central pacific (Query: {"filtered": {"filter": {"and": \[{"geo_bounding_box": {"geopoint": {"bottom_right": {"lat": 13.923403897723347, "lon": -148.35937500000003}, "top_left": {"lat": 27.68352808378776, "lon": -169.80468750000003}}}}, {"term": {"family": "fringillidae"}}\]}}}), I will then sift through the entries to fill in any possible unspecific missing info (such as year and locality) based on the information gathered in the above early account search, matching this info based on collector and previously abstracted specimen labels, as detailed in [@banko2007]. In addition, I will correct or remove any listed geographic coordinates that do not match the locality listed, or are clearly extraneous (such as being placed in the middle of the ocean).
 
+Missing or extraneous info will be filled if available by matching site names to known collection sites. The coordinates for these sites will be abstracted from georeferenced maps from the 1984 series of History of endemic Hawaiian Birds reports by Winston Banko. [@banko2007a]
+
+These maps do not have specific details about projection/datum, but the text states standard USGS 1:2400-scale topographic quadrangles were used. Since this was published in 1984, and because the specimens were located by points on a flat map (rather than 3d globe GPS system) I used the Old Hawaiian projected coordinate system, which are broken down by island as such:
+
+-   Old Hawaiian StatePlane Hawaii 1 FIPS 5101 (US Feet) - Hawaiʻi island
+
+-   Old Hawaiian StatePlane Hawaii 1 FIPS 5102 (US Feet) - Maui, Kahoolawe, Lānaʻi, Molokaʻi
+
+-   Old Hawaiian StatePlane Hawaii 1 FIPS 5103 (US Feet) - Oʻahu
+
+-   Old Hawaiian StatePlane Hawaii 1 FIPS 5104 (US Feet) - Kauaʻi, Niʻihau
+
+-   Old Hawaiian StatePlane Hawaii 1 FIPS 5105 (US Feet) - NWHI
+
+Screenshots were georeferenced using at least 5 major towns or geographic features for an affine transformation. If less than five were available, notable points of the island's outline were used. Localities were then traced over as feature classes. These feature classes are then used to reference to find more precise coordinate data for samples which lack it.
+
 #### **Final combo mapping**
 
-Maps of modern honeycreeper ranges exist, such as from the IUCN redlist, or from books, such as The Hawaiian Honeycreepers by H. Douglas Pratt. In addition, I will collect point occurrence data from the Hawaii forest bird surveys (1970s-present). These data will be combined with the data gathered above and from Chapter 1. Depending on the amount and quality of the data, I will take one of three approaches.
+Maps of modern honeycreeper ranges exist, such as from the IUCN redlist, or from books, such as The Hawaiian Honeycreepers by H. Douglas Pratt. In addition, I will collect point occurrence data from the Hawaii forest bird surveys (1970s-present). These data will be combined with the refined museum specimen data gathered above and ʻōlelo Hawaiʻi sources from Chapter 1. Depending on the amount and quality of the data, I will take one of three approaches.
 
-1.  Poisson point distribution model with using presence-only (PO) museum specimen data and the data from chapter 1 as a spatial offset. [@merow2017] This will be done with R package spatstat. This method requires a raster-type input for the spatial offset. The grid size (resolution) of this raster will be determined based on the resolution of the PO data. The offset boundaries will be defined using a smoothing function, so that the harsh edge of the polygon can instead be a smooth gradient of probability. This more accurately represents the uncertainty of the data and is more biologically accurate. (species arenʻt just going to hit a wall and stop)
+1.  Poisson point distribution model with using presence-only (PO) museum specimen data and the data from chapter 1 as a spatial offset. [@merow2017] This will be done with R package spatstat. This method requires a raster-type input for the spatial offset. The grid size (resolution) of this raster will be determined based on the resolution of the PO data. The offset boundaries will be defined using a smoothing function, so that the harsh edge of the polygon can instead be a smooth gradient of probability. This more accurately represents the uncertainty of the data and is more biologically accurate.
 
-<!-- -->
+2.  Integrated nested Laplace approximated Bayesian models using R package *inlabru* [@bachl2019]. Typical SDM's usually require data collected with structured methods to remove possible false correlates, such as sampling effort. The data here are not collected under these structured methods and vary greaty. Bayesian approaches can account for these effects as random effects. In particular, *inabru* can account for spatial autocorrelation using Gaussian random fields. INLA is also computationally faster than MCMC for these complex models. PO data is modeled using a log-Gaussian Cox process model. [@morera-pujol2023] The polygon data (from chapter 1) can be integrated into the model in two ways -
 
-2.  Integrated nested Laplace approximated bayesian models using R package *inlabru* [@bachl2019]. These methods account for spatial autocorrelation using Gaussian random fields. PO data is modeled using a log-Gaussian Cox process model. The polygon data (from chapter 1) can be integrated in two ways -
+    a\. As a prior to the model. This will be done similarly to the spatial offset method above, where the polygons' borders will be smoothed and turned into a raster, then used as the Gaussian prior distribution. [@gryba2024]
 
-    a\. As a prior to the model. This will be done similarly to the spatial offset method above, where the polygons' borders will be smoothed and turned into a raster, then used as the gaussian prior distribution. [@gryba2024]
+    b\. As a second dataset. This requires a joint likelihood model approach, where a likelihood is first modeled for each dataset individually, then jointly modeled.
 
-    b\. As a second dataset. This requires a joint likelihood model approach, where a likelihood is first modeled for each dataset individually, then jointly modeled. The PO data will again be modeled using a log-Gaussian Cox process model. The polygon data will (be rasterized? idk help)
+    1.  Using the polygon to generate a second likelihood distribution. Issues - having a raster makes it no longer a point-process model, no? so I'm not how if INLA would work for it. I'm certain there typical mcmc or something could work, but would these be compatible?
+
+    2.  The rasterized polygon dataset will be used to generate a second likelihood distritution. Discretizing the data this way makes it more usable but also introduces points of bias - eg how large to make cell size, blurring boundaries of polygon using chosen smoothing funciton etc. Would be better to do polygon if can, no?
 
 ## Chapter 3 - Eco-biogeo analysis
 
 ### Intro
 
-Island adaptive radiations (ARs) provide a unique opportunity for biologists to test hypotheses about eco-evolutionary drivers of diversification. The isolation of oceanic high islands limits immigration, producing more readily interpretable diversification histories from single colonization events1. The isolated geography and resultant ecosystems of remote islands have long been hypothesized to promote ARs through eco-evolutionary feedbacks, but the mechanistic reasons remain unresolved. An exemplary eco-evolutionary system is found in the correlation between beak morphology and feeding ecology in avian clades, particularly in passerines.
+Island adaptive radiations (ARs) provide a unique opportunity for biologists to test hypotheses about eco-evolutionary drivers of diversification. The isolation of oceanic high islands limits immigration, producing more readily interpretable diversification histories from single colonization events. [@lerner2011] The isolated geography and resultant ecosystems of remote islands have long been hypothesized to promote ARs through eco-evolutionary feedbacks, but the mechanistic reasons remain unresolved. An exemplary eco-evolutionary system is found in the correlation between beak morphology and feeding ecology in avian clades, particularly in passerines. [@cooney2017]
 
-The chronological formation of the Hawaiian (HI) island chain creates a unique system to study the interaction between geography and ecology on speciation. In the HI Islands, biogeographic patterns of evolution, such as Hennig’s progression rule, in which younger clades are found exclusively on geologically younger islands, have been documented in many HI endemics, cementing the signature that Hawaii’s unique geography has had on its flora and fauna3. However, the precise mechanism behind this rule is unclear. When establishing on a newly-formed island, species have an increase in habitable area (island theory of biogeography) as well as new, unoccupied niche space (ecological release). While both of these opportunities - geographical and ecological- contribute to the multiple ARs of HI species, it is unclear to what extent each effect has on rates of speciation.
+The chronological formation of the Hawaiian (HI) island chain creates a unique system to study the interaction between geography and ecology on speciation. In the HI Islands, biogeographic patterns of evolution, such as Hennig’s progression rule, in which younger clades are found exclusively on geologically younger islands, have been documented in many HI endemics, cementing the signature that Hawaii’s unique geography has had on its flora and fauna. [@shaw2016] However, the precise mechanism behind this rule is unclear. When establishing on a newly-formed island, species have an increase in habitable area (island theory of biogeography) as well as new, unoccupied niche space (ecological release). While both of these opportunities - geographical and ecological- contribute to the multiple ARs of HI species, it is unclear to what extent each effect has on rates of speciation.
 
-The HI honeycreeper radiation is a classic example of an AR with an extreme diversity of beak morphology which coevolved to utilize different feeding ecologies. Despite substantial work documenting the HI honeycreeper’s morphologies and phylogenetic relationships, it remains an open question whether speciation is driven by geographic isolation followed by local adaptation or if ecologically-mediated selection can drive speciation in sympatry. Using the newly enhanced phylogenetic and biogeographic data from chapter 1 I will test three hypotheses: H1 Geographic opportunity - speciation requires initial geographic isolation; H2 Ecological opportunity - speciation requires populations to be driven into new ecological niches via competition and mutualism; and H3 Eco-geographic interactions - neither geographic nor ecological opportunity are sufficient on their own.
+The HI honeycreeper radiation is a classic example of an AR with an extreme diversity of beak morphology which coevolved to utilize different feeding ecologies. [@james2004] Despite substantial work documenting the HI honeycreeper’s morphologies and phylogenetic relationships, it remains an open question whether speciation is driven by geographic isolation followed by local adaptation or if ecologically-mediated selection can drive speciation in sympatry. Using the newly enhanced phylogenetic and biogeographic data from chapter 1 I will test three hypotheses:
+
+-   H1 Geographic opportunity - speciation requires initial geographic isolation
+
+-   H2 Ecological opportunity - speciation requires populations to be driven into new ecological niches via competition and mutualism
+
+-   H3 Eco-geographic interactions - neither geographic nor ecological opportunity are sufficient on their own.
 
 ### Methods
 
 To test my three hypotheses I will compare the phylogenetic signals of beak morphology and geographic ranges to evolutionary null models - Brownian motion for morphology and a highly DEC model for rages. This DEC model will explicitly rule out impossible biogeographic state spaces, so that islands that haven't emerged yet cannot be colonized. For each, I will fit the corresponding model to the data, then use posterior prediction to test the model fit.
 
 I predict that under H1 morphology will conform to Brownian motion while geographic ranges will diverge from the DEC model. Conversely, I predict that under H2 morphology will diverge from Brownian motion while geographic ranges will conform to the DEC model. Under H3 I predict both morphology and ranges will diverge from their respective null models. 
-
-Test out the rate of change through time, see if there is spikes - if no genetic data use LTT, otherwise use diversification rate estimate
